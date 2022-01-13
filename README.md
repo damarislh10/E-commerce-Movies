@@ -1,5 +1,7 @@
 # Reto Final: Desarrollo Ecommerce
 
+Despliegue https://vibrant-perlman-67f67a.netlify.app
+
 1. Index: Esta es la primera página donde en cada una de las páginas tendrá un menú con las opciones: Home, Productos (1), y un ícono que refleja las
 cantidades de ítems agregados al carrito con un enlace al detalle del carrito de compras (2) (Imagen 2). Agregamos una imagen de Bienvenida (3) que 
 se cargará desde una URL referente al tipo de productos que se venderán en la tienda. Agregamos dos Banners (4,5) referentes a las categorías de productos
