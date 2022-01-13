@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+  box-sizing: border-box;
+}
+body {
+  background-color: #181818;
+  color: #fff;
+}
+
+nav {
+  background-color: #000;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.menu > .list {
+  margin: 0 0 0 2%;
+}
+.list a {
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+  padding: 50px 40px;
+  color: #fff;
+}
+.list a:hover {
+  background-color: rgb(224, 126, 13);
+}
+
+#container-img {
+  width: 40%;
+  margin: 1% 0 1% 2%;
+}
+#logo {
+  width: 80%;
+  cursor: pointer;
+}
+
+#btn-Carrito {
+  background-color: #0000;
+  border: none;
+  padding: 5px 5px;
+}
+
+#resultItem {
+  margin-left: 2px;
+  position: absolute;
+}
+
+/*Slide*/
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+
+  15% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+
+  35% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+
+  55% {
+    transform: translateX(-300%);
+  }
+  70% {
+    transform: translateX(-300%);
+  }
+
+  75% {
+    transform: translateX(-400%);
+  }
+  90% {
+    transform: translateX(-400%);
+  }
+
+  95% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slider {
+  position: relative;
+}
+
+.slides {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100vw;
+  flex-shrink: 0;
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+  animation-play-state: paused;
+}
+
+.slide img {
+  width: 100%;
+  height: 700px;
+  vertical-align: top;
+}
+
+.slide a {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.slide:target {
+  animation-name: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+.slider-controler {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.slider-controler li {
+  margin: 0 0.5rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.slider-controler a {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.img-categ {
+  width: 260px;
+  height: 400px;
+}
+.display {
+  border: none;
+}
+
+.contenedor-cards {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+/*----------------------------------*/
+/*container cards movies*/
+#listMovies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 10% 0 10% 0;
+}
+
+.imageMovie {
+  height: 320px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-body > .butonVer {
+  background-color: rgb(224, 126, 13);
+  border: 1px solid rgb(224, 126, 13);
+  font-weight: bold;
+}
+.card-body > .butonVer a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.card-body > .butonVer:hover {
+  background-color: rgba(224, 126, 13, 0.5);
+  border: rgba(224, 126, 13, 0.5);
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0 3% 0;
+  width: 100%;
+}
+.footer,
+h4 > a {
+  color: #fff;
+}
+.footer,
+h4 > a:hover {
+  color: rgb(224, 126, 13);
+}
+
+@media only screen and (min-width: 1200px) {
+  .slide {
+    width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .slide img {
+    width: 100%;
+    height: 300px;
+    vertical-align: top;
+  }
+  .contenedor-cards {
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .menu {
+    margin: auto;
+  }
+  #container-img {
+    margin: auto;
+    padding-top: 5%;
+  }
+  .list a:hover {
+    background-color: #000;
+  }
+}
+@media only screen and (min-width: 280px) and (max-width: 280px) {
+  .container-info {
+    width: 90%;
+  }
+  .list a {
+    padding: 50px 20px;
+  }
+}

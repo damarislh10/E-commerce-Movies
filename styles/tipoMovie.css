@@ -1,0 +1,14 @@
+#listMovies {
+  margin: auto;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.precio {
+  padding: 3% 0 2% 0;
+  height: 30%;
+  border-left: 2px solid #ffff;
+  border-right: 2px solid #ffff;
+}

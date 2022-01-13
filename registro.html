@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/registro.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="icon" href="images/logoCineFlix.PNG" type="image/x-icon">
+    <title>Cineflix</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="container-img">
+              <img id="logo" src="images/logoCineFlix.PNG" alt="">
+            </div>
+          <ul class="menu">
+            <li class="list"><a href="index.html">Inicio</a></li>
+            <button id="btn-Carrito" class="list"><a href="carrito.html">
+              <img src="https://img.icons8.com/dotty/40/FFFFFF/shopping-cart.png" alt="">
+              <label id="resultItem">0</label>
+            </a></button>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="formulario">
+        <form action="formulario" id="form">
+            <div id="container-form">
+            <h2>Informaciòn de Pago</h2>
+            <div class="information-grid">
+            
+            <input id="name" name="name" type="text" placeholder="Nombre Completo" required></br>
+                        
+            <input id="correo" name="correo" type="email" placeholder="Correo Electronico" required></br>
+            
+            <input id="NoTarjeta" name="NoTarjeta"  type="number" placeholder="No. de Tarjeta" required></br>
+                       
+            <input id="fVencimiento" name="fVencimiento" type="text" placeholder="F. Vencimiento MM/AA" required></br>
+            <input id="cvv" name="cvv" type="number" placeholder="CVV" required></br>
+              </div>
+        <div class="container-btn">
+            <button class="boton" id="botonEnv" type="submit">Pagar</button>
+        </div>
+        </div>
+        </form>
+    </div>
+      </main>
+      <div class="footer">
+        <footer>
+          <h2><a href="//github.com/damarislh10" target="_blank">Link Mi GitHub</a></h2>
+        </footer>
+      </div>
+      <script src="scripts/registro.js"></script>
+</body>
+</html>

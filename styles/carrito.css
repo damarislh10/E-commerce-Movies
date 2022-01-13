@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+  box-sizing: border-box;
+}
+body {
+  background-color: #181818;
+  color: #fff;
+}
+
+nav {
+  background-color: #000;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.menu > .list {
+  margin: 0 0 0 2%;
+}
+.list a {
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+  padding: 50px 40px;
+  color: #fff;
+}
+.list a:hover {
+  background-color: rgb(224, 126, 13);
+}
+
+#container-img {
+  width: 40%;
+  margin: 1% 0 1% 2%;
+}
+#logo {
+  width: 80%;
+  cursor: pointer;
+}
+
+#btn-Carrito {
+  background-color: #0000;
+  border: none;
+  padding: 5px 5px;
+}
+
+#resultItem {
+  margin-left: 2px;
+  position: absolute;
+}
+
+.contenedor-car {
+  width: 80%;
+  margin: auto;
+}
+
+.list-car {
+  background-color: #831212;
+}
+.list-car > ul {
+  display: inline-flex;
+}
+
+.list-car > ul li {
+  padding: 5% 50%;
+  list-style: none;
+}
+
+#imagenMov {
+  border-radius: 3% !important;
+  margin-bottom: 8%;
+  width: 400px;
+}
+
+.encabezados {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nombre {
+  margin-left: 85px;
+}
+.cant {
+  margin-top: 50%;
+  font-weight: bold;
+}
+
+.total-con > #total {
+  margin-left: 900px;
+  width: 60%;
+}
+
+.boton-car {
+  background-color: rgb(224, 126, 13);
+  color: #ffff;
+}
+
+.boton-car a {
+  text-decoration: none;
+}
+
+.pagar {
+  margin-left: 1000px;
+  margin-top: -12%;
+}
+
+.footer {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0 3% 0;
+  width: 100%;
+}
+.footer,
+h4 > a {
+  color: #fff;
+}
+.footer,
+h4 > a:hover {
+  color: rgb(224, 126, 13);
+}

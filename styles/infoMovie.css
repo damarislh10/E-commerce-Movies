@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica;
+}
+body {
+  background-color: #181818;
+  color: #fff;
+}
+
+nav {
+  background-color: #000;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.menu > .list {
+  margin: 0 0 0 2%;
+}
+.list a {
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+  padding: 50px 40px;
+  color: #fff;
+}
+.list a:hover {
+  background-color: rgb(224, 126, 13);
+}
+#logo {
+  width: 80%;
+  cursor: pointer;
+}
+
+#btn-Carrito {
+  background-color: #0000;
+  border: none;
+  padding: 5px 5px;
+}
+
+#resultItem {
+  margin-left: 2px;
+  position: absolute;
+}
+
+
+
+.col > .imagenInfo {
+  height: 500px;
+  width: 70%;
+
+}
+
+.contenedor-image{
+  object-fit: contain;
+  }
+
+
+
+#item-car {
+  width: 15%;
+}
+.prec-card {
+  margin-left: 7%;
+}
+.car {
+  padding: 5%;
+  width: 85%;
+  margin: auto;
+  background-color: #181818;
+  border-radius: 10px;
+}
+
+.car > label {
+  border-radius: 5px;
+  background-color: rgb(173, 160, 36);
+  color: #000;
+  font-size: 20px;
+}
+.car > input::placeholder {
+  text-align: center;
+}
+.car > input {
+  text-align: center;
+}
+/*Footer*/
+
+.footer {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0 3% 0;
+  margin: 0%;
+}
+.footer,
+h4 > a {
+  color: #fff;
+}
+.footer,
+h4 > a:hover {
+  color: rgb(224, 126, 13);
+}
+
+.container {
+  background: linear-gradient(
+    to right,
+    #3a3939 10%,
+    rgba(53, 53, 53, 0.98) 20%,
+    rgba(53, 53, 53, 0.98) 22%,
+    rgba(51, 48, 38, 0.97) 25%,
+    #292613f2 35%,
+    rgba(36, 34, 22, 0.94) 40%,
+    rgba(44, 38, 12, 0.92) 45%,
+    rgba(61, 53, 19, 0.9) 50%,
+    rgba(41, 36, 36, 0.87) 55%,
+    rgba(23, 23, 23, 0.5) 100%
+  );
+  padding: 0% 0% 0% 3%;
+  width: 80%;
+  margin-left: 16%;
+}
+
+#duracion {
+  color: #aaa7a7;
+}
+
+#nameMovie {
+  font-weight: 700;
+}
+
+
+
+@media only screen and (max-width: 540px) {
+  nav {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .menu {
+    margin: auto;
+  }
+  #container-img {
+    margin: auto;
+    padding-top: 5%;
+  }
+  .list a:hover {
+    background-color: #000;
+  }
+
+  .row {
+    display: block;
+    width: 100%;
+
+    margin: auto;
+  }
+  .col {
+    margin: auto;
+    padding: 0 10% 5% 10%;
+  }
+  .container-form {
+    width: 100%;
+    padding: 5% 0;
+  }
+  .container {
+    padding: 0%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 1280px) {
+  .col {
+    margin: auto;
+    padding: 0 5% 5% 5%;
+  }
+}
